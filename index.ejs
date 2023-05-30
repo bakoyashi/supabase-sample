@@ -6,8 +6,13 @@
 <body>
   <h1>Data from Supabase</h1>
   <ul>
-    <% data.forEach(item => { %>
-      <li><%= item.your_column_name %></li>
+    <% data.forEach(book => { %>
+      <li>
+        Title: <%= book.title %><br/>
+        Read Date: <%= book.read_date %><br/>
+        Rating: <%= book.rating %><br/>
+        Review: <%= book.review %>
+      </li>
     <% }); %>
   </ul>
 </body>

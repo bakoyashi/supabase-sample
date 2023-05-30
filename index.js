@@ -23,7 +23,7 @@ app.get('/', async (req, res) => {
 
   // Supabaseから全てのデータを取得します。
   let { data, error } = await supabase
-    .from('your-table-name')
+    .from('books') // ここでテーブル名を指定します。
     .select('*');
 
   // データ取得に失敗した場合はエラーメッセージをコンソールに表示します。
