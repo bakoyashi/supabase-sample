@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Supabase App</title>
+</head>
+<body>
+  <h1>Data from Supabase</h1>
+  <ul>
+    <% data.forEach(item => { %>
+      <li><%= item.your_column_name %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
